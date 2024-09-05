@@ -1,0 +1,64 @@
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mi Portafolio</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+           <img src="img/logo1.png" alt="logo" id="imgLogo">
+        </header>
+
+        <main class="contenido">
+            <!-- Sección de presentación -->
+            <section class="contenido__presentacion">
+                <div class="div__contenido__presentacion">
+                    <h1 class="contenido__presentacion__titulo" >Mi Portafolio: Iris Zamora</h1>
+                    <p class="contenido__presentacion__texto">Soy Iris, estudiante de la Tecnicatura en Desarrollo de Software y aprendiz en el apasionante mundo de la tecnología. Mi objetivo es convertirme en un desarrolladora versátil, capaz de crear soluciones innovadoras y efectivas que mejoren la experiencia de los usuarios.</p>
+                    <a href="https://github.com/IrisZamora"  target="_blank"><img class="github" src="img/github.png" alt="" target="_BLANK"></a>
+                </div>
+                
+                <img class="contenido__imagen" src="img/avatar.jpg" alt="imagen Avatar Iris">
+            </section>
+
+             <!-- Tabla de tecnologías y hobbies -->
+            <table class="contenido__tecnologias">
+                    <tr>
+                        <th id="titulos__tabla">Tecnologías que Conozco</th>
+                        <th id="titulos__tabla">Tecnologías que me gustaria conocer</th>
+                        <th id="titulos__tabla">Hobbies</th>
+                    </tr>
+                    <tr>
+                        <td id="titulos__tabla">Html, Css, Bootstrap, #C, Java</td>
+                        <td id="titulos__tabla">Perfeccionarme en Java, Spring Boot </td>
+                        <td id="titulos__tabla">Leer Novelas</td>
+                    </tr>
+
+            </table>
+        
+            <!-- Formulario de contacto -->
+            <form class="contenido__formulario" action="#">
+                <label for="nombre">Nombre:</label>
+                <input class="contenido__formulario__input" type="text" id="nombre" name="nombre" autocomplete="given-name" required><br><br>
+                
+                <label for="apellido">Apellido:</label>
+                <input class="contenido__formulario__input" type="text" id="apellido" name="apellido" autocomplete="family-name" required><br><br>
+                
+                <label for="email">Email:</label>
+                <input class="contenido__formulario__input" type="email" id="email" name="email" autocomplete="email" required><br><br>
+                
+                <label for="telefono">Teléfono:</label>
+                <input class="contenido__formulario__input" type="number" id="telefono" name="telefono" autocomplete="tel" required><br><br>
+                
+                <button class="contenido__formulario__btn" type="submit">Enviar</button>
+            </form>
+      
+        </main>
+
+        <footer class="footer">
+         <p>Práctica Formativa 1: Página de presentación HTML y CSS</p>
+        </footer>
+    </body>
+    </html>

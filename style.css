@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100%;/*la altura de la pagina ocupa el 100% del navegador*/
+    background-color: #e1288e;
+    color: #FFFFFF;
+    box-sizing: border-box; /* hace que los elementos hijos no sobresalgan del elemento padre*/
+}
+
+#imgLogo{
+    padding-left:3%;
+    padding-top: 3%;
+    width: 5%;
+}
+
+/*Estilos al Main*/
+
+.contenido{
+    padding: 2% 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:3%;
+    gap: 20px;
+}
+
+.contenido__presentacion{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    width: 80%;
+}
+.div__contenido__presentacion{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+}
+
+.contenido__presentacion__titulo{
+    font-family: "Krona One", sans-serif;
+    font-size: 2rem;;
+    font-weight: 600;
+}
+
+.contenido__presentacion__texto{
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5rem;;
+    font-weight: 400;
+}
+
+.github{
+    padding:5px;
+    border: 1px solid #000000;
+    border-radius: 12px;
+}
+
+.github:hover{
+    border: 2px solid #FFFFFF;
+}
+
+.contenido__imagen{
+    width: 25%;
+    border-radius: 180px;
+}
+
+.contenido__tecnologias{
+    width: 80%;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;;
+    font-weight: 400;
+}
+
+#titulos__tabla{
+   border: 1px solid #FFFFFF;
+   padding: 1%;
+   width: 30%;
+}
+
+.contenido__formulario{
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    width: 80%;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    
+}
+
+.contenido__formulario__input{
+    padding-top:5px;
+    padding-bottom: 5px;
+}
+
+.contenido__formulario__btn{
+    width: 25%;
+    text-align: center;
+    margin: auto;
+    padding: 12px 0;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #000000;
+    border: 2px solid #000000;
+    display: flex;
+    justify-content: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    cursor: pointer;
+    
+}
+
+/*Estilos para el pie de pagina*/
+
+.footer{
+    background-color: #e338f9;
+    padding: 20px;
+    color: #000000;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;;
+    font-weight: 600;
+}
