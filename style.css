@@ -11,17 +11,31 @@ body{
     color: #FFFFFF;
     box-sizing: border-box; /* hace que los elementos hijos no sobresalgan del elemento padre*/
 }
-
+header{
+    position: fixed;
+    z-index: 1000; /* Para asegurarse de que esté por encima de otros elementos */
+}
 #imgLogo{
     padding-left:3%;
     padding-top: 3%;
     width: 5%;
 }
 
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px;
+    text-align:start;
+    z-index: 1000; /* Para asegurarse de que esté por encima de otros elementos */
+}
 /*Estilos al Main*/
 
 .contenido{
-    padding: 2% 5%;
+   
+    padding-top: 10%; /* Ajustar este valor según la altura del header */
+    padding-bottom: 10%; /* Ajustar este valor según la altura del footer */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -120,6 +134,11 @@ body{
 /*Estilos para el pie de pagina*/
 
 .footer{
+    position: fixed;
+    z-index: 1000; /* Para asegurarse de que esté por encima de otros elementos */
+    bottom: 0;
+    left: 0;
+    width: 100%;
     background-color: #e338f9;
     padding: 20px;
     color: #000000;
