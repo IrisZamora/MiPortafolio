@@ -7,17 +7,54 @@
 
 body{
     height: 100%;/*la altura de la pagina ocupa el 100% del navegador*/
-    background-color: #e1288e;
+    background-color:#000000;
     color: #FFFFFF;
     box-sizing: border-box; /* hace que los elementos hijos no sobresalgan del elemento padre*/
 }
-header{
+.header{
     position: fixed;
     z-index: 1000; /* Para asegurarse de que esté por encima de otros elementos */
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 1%;
+    background-color:#000000;
 }
+
+.header__menu{
+    display: flex;
+    gap: 80px;
+    list-style: none;
+}
+
+.header__menu__link{
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+/* Estilo para enlaces que no han sido visitados */
+a:link {
+    color:#FFFFFF;
+    text-decoration: none;
+  }
+  
+  
+  /* Estilo para cuando el ratón está sobre el enlace */
+  a:hover {
+    font-size: 20px; 
+  }
+  
+  /* Estilo para cuando el enlace está activo (clickeado) */
+  a:active {
+    color: #22D4FD;
+  }
+  
+
+
 #imgLogo{
-    padding-left:3%;
-    padding-top: 3%;
+    
     width: 5%;
 }
 
@@ -40,7 +77,7 @@ header{
     flex-direction: column;
     align-items: center;
     margin:3%;
-    gap: 20px;
+    gap: 30px;
 }
 
 .contenido__presentacion{
@@ -56,6 +93,24 @@ header{
     gap: 40px;
     align-items: center;
 }
+
+  @keyframes deslizarArriba {
+    0% {
+      transform: translateY(100%); /* Empieza fuera de la vista, abajo */
+      opacity: 0; /* Inicialmente invisible */
+    }
+    100% {
+      transform: translateY(0); /* Posición final, en su lugar original */
+      opacity: 1; /* Totalmente visible */
+    }
+  }
+  
+  /* Aplica la animación al elemento */
+  div.div__contenido__presentacion{
+  font-size: 24px;
+  animation: deslizarArriba 1s ease-out;
+  }
+  
 
 .contenido__presentacion__titulo{
     font-family: "Krona One", sans-serif;
@@ -90,6 +145,43 @@ header{
     font-size: 1rem;;
     font-weight: 400;
 }
+/* Filas pares */
+tr:nth-child(even) {
+    background-color: #FFFFFF; /* Color de fondo para filas pares */
+  }
+  
+  /* Filas impares */
+  tr:nth-child(odd) {
+    background-color: #FFFFFF; /* Color de fondo para filas impares */
+  }
+  
+  /* Estilos para las celdas */
+  td, th {
+    padding: 10px; /* Espacio interno de las celdas */
+    border: 1px solid #000000; /* Borde de las celdas */
+    text-align: left; /* Alinear el texto a la izquierda */
+    color: #000000;
+  }
+  
+  /* Encabezado de la tabla */
+  th {
+    background-color: #22D4FD; /* Color de fondo para el encabezado */
+    color: #000000; /* Color del texto del encabezado */
+  }
+  
+
+.contenido__tecnologias__iconos{
+    display: flex;
+    justify-content:center;
+    gap: 20px;
+    padding: 20px;
+    margin: 2%;
+}
+
+div img{
+    width: 5%;
+}
+
 
 #titulos__tabla{
    border: 1px solid #FFFFFF;
@@ -100,11 +192,12 @@ header{
 .contenido__formulario{
     display: flex;
     flex-direction: column;
-    padding: 5%;
-    width: 80%;
+    padding: 2%;
+    width: 50%;
     font-family: "Montserrat", sans-serif;
     font-size: 1rem;
     font-weight: 400;
+    border: solid #FFFFFF;
     
 }
 
@@ -139,7 +232,7 @@ header{
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: #e338f9;
+    background-color: #22D4FD;
     padding: 20px;
     color: #000000;
     text-align: center;

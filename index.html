@@ -7,8 +7,17 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <header>
+        <header class="header">
            <img src="img/logo1.png" alt="logo" id="imgLogo">
+           <nav>
+            <ul class="header__menu">
+              <li><a class="header__menu__link" href="index.html">Home</a></li>
+              <li><a class="header__menu__link" href="sobremi.html">Sobre mí</a></li>
+              <li><a class="header__menu__link" href="#tecnologias">Tecnologías</a></li>
+              <li><a class="header__menu__link" href="#contacto">Contacto</a> </li>
+            </ul>
+          </nav>
+          
         </header>
 
         <main class="contenido">
@@ -24,7 +33,8 @@
             </section>
 
              <!-- Tabla de tecnologías y hobbies -->
-            <table class="contenido__tecnologias">
+            <section class="contenido__tecnologias" id="tecnologias">
+            <table>
                     <tr>
                         <th id="titulos__tabla">Tecnologías que Conozco</th>
                         <th id="titulos__tabla">Tecnologías que me gustaria conocer</th>
@@ -35,11 +45,20 @@
                         <td id="titulos__tabla">Perfeccionarme en Java, Spring Boot </td>
                         <td id="titulos__tabla">Leer Novelas</td>
                     </tr>
-
             </table>
+            <div class="contenido__tecnologias__iconos" >
+                <img src="img/html-5.png" alt="">
+                <img src="img/css.png" alt="">
+                <img src="img/bootstrap.png" alt="">
+                <img src="img/js.png" alt="">
+                <img src="img/java.png" alt="">
+                <img src="img/c-sharp.png" alt="">
+                <img src="img/mysql.png" alt="">
+            </div>
+        </section>
         
             <!-- Formulario de contacto -->
-            <form class="contenido__formulario" action="#">
+            <form class="contenido__formulario" action="#" id="contacto">
                 <label for="nombre">Nombre:</label>
                 <input class="contenido__formulario__input" type="text" id="nombre" name="nombre" autocomplete="given-name" required><br><br>
                 
