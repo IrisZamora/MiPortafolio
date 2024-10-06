@@ -240,3 +240,147 @@ div img{
     font-size: 1rem;;
     font-weight: 600;
 }
+
+ /* Tablet horizontal
+ @media (max-width: 1080px) { }
+ /* Tablet vertical
+ @media (max-width: 768px) { }
+ /* Mobil 1 
+ @media (max-width: 480px) { }
+ /* Mobil 2 
+ @media (max-width: 375px) { }*/
+
+  /* Tablet horizontal */
+  @media (max-width: 1080px) { 
+    .header__menu {
+        gap: 40px; /* Reducir espacio entre enlaces */
+    }
+    
+    .contenido__presentacion {
+        flex-direction: column;
+        width: 90%; /* Ajustar tamaño del contenedor */
+    
+    }
+    
+    .contenido__imagen {
+        width: 30%; /* Hacer la imagen un poco más grande */
+    }
+
+    .contenido__presentacion__titulo {
+        font-size: 1.8rem; /* Reducir tamaño de texto */
+    }
+    
+    .contenido__presentacion__texto {
+        font-size: 1.3rem; /* Reducir texto para tablet */
+    }
+
+    .contenido__tecnologias {
+        font-size: 0.9rem; /* Ajustar tamaño de texto */
+    }
+}
+
+/* Tablet vertical */
+@media (max-width: 768px) { 
+    .header{
+        position: relative;
+    }
+    .header__menu {
+        flex-direction: column;
+        gap: 20px; /* Reorganizar menú verticalmente */
+    
+    }
+
+    .contenido__presentacion {
+        width: 100%;
+    }
+
+    .contenido__imagen {
+        width: 40%; /* Ajustar tamaño de imagen */
+    }
+
+    .contenido__presentacion__titulo {
+        font-size: 1.5rem; /* Reducir más el texto */
+    }
+    
+    .contenido__presentacion__texto {
+        font-size: 1.1rem;
+    }
+
+    .contenido__tecnologias {
+        font-size: 0.8rem;
+    }
+
+    .contenido__formulario {
+        width: 80%; /* Hacer el formulario más pequeño */
+    }
+
+    .contenido__formulario__btn {
+        width: 50%; /* Aumentar tamaño del botón */
+    }
+}
+
+/* Mobil 1 */
+@media (max-width: 480px) { 
+    .header {
+        flex-direction: column;
+        padding: 2%;
+        position: relative;
+    }
+
+    .contenido__presentacion {
+        gap: 10px; /* Reducir espacios */
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .contenido__imagen {
+        width: 50%; /* Ajustar el tamaño de la imagen */
+    }
+
+    .contenido__presentacion__titulo {
+        font-size: 1.2rem; /* Hacer el texto más pequeño */
+    }
+
+    .contenido__presentacion__texto {
+        font-size: 1rem;
+    }
+
+    .contenido__formulario {
+        width: 100%; /* Ocupa todo el ancho */
+    }
+
+    .contenido__formulario__btn {
+        width: 60%; /* Botón más grande */
+    }
+    .footer {
+        font-size: 0.5rem; /* Achicar la letra del footer */
+    }
+}
+
+/* Mobil 2 */
+@media (max-width: 375px) { 
+    .header__menu {
+        gap: 10px; /* Menor espacio entre los elementos */
+        position: relative;
+    }
+
+    .contenido__imagen {
+        width: 60%; /* Imagen más grande para dispositivos pequeños */
+    }
+
+    .contenido__presentacion__titulo {
+        font-size: 1rem; /* Texto más pequeño */
+    }
+
+    .contenido__presentacion__texto {
+        font-size: 0.9rem; /* Texto más pequeño */
+    }
+
+    .contenido__formulario__btn {
+        width: 70%; /* Aumentar el tamaño del botón */
+    }
+
+    .footer {
+        font-size: 0.5rem; /* Achicar la letra del footer */
+    }
+}
