@@ -224,7 +224,7 @@ div img{
 }
 
 .contenido__formulario__btn{
-    width: 25%;
+    width: 35%;
     margin: auto;
     padding: 12px 0;
     border-radius: 8px;
@@ -376,9 +376,7 @@ div img{
         width: 100%; /* Ocupa todo el ancho */
     }
 
-    .contenido__formulario__btn {
-        width: 60%; /* Botón más grande */
-    }
+
     .footer {
         font-size: 0.5rem; /* Achicar la letra del footer */
     }
@@ -412,7 +410,7 @@ div img{
     }
 
     .contenido__formulario__btn {
-        width: 70%; /* Aumentar el tamaño del botón */
+        width: 40%; /* Aumentar el tamaño del botón */
     }
 
     .footer {
