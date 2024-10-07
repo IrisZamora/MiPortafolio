@@ -216,6 +216,13 @@ div img{
     padding-bottom: 5px;
 }
 
+.contenido__formulario label, 
+.contenido__formulario input {
+    display: block; /* Hace que los elementos ocupen una línea completa */
+    width: 100%; 
+    margin-bottom: 15px; /* Añade espacio debajo de cada elemento */
+}
+
 .contenido__formulario__btn{
     width: 25%;
     margin: auto;
