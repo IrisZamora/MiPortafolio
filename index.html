@@ -5,6 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Mi Portafolio</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
     </head>
     <body>
         <header class="header">
@@ -25,7 +27,7 @@
             <section class="contenido__presentacion">
                 <div class="div__contenido__presentacion">
                     <h1 class="contenido__presentacion__titulo" >Mi Portafolio: Iris Zamora</h1>
-                    <p class="contenido__presentacion__texto">Soy Iris, estudiante de la Tecnicatura en Desarrollo de Software y aprendiz en el apasionante mundo de la tecnología. Mi objetivo es convertirme en un desarrolladora versátil, capaz de crear soluciones innovadoras y efectivas que mejoren la experiencia de los usuarios.</p>
+                    <p class="contenido__presentacion__texto">Soy <strong>Iris</strong>, estudiante de la Tecnicatura en Desarrollo de Software y aprendiz en el apasionante mundo de la tecnología. Mi objetivo es convertirme en un desarrolladora versátil, capaz de crear soluciones innovadoras y efectivas que mejoren la experiencia de los usuarios.</p>
                     <a href="https://github.com/IrisZamora"  target="_blank"><img class="github" src="img/github.png" alt="" target="_BLANK"></a>
                 </div>
                 
@@ -60,18 +62,21 @@
             <!-- Formulario de contacto -->
             <form class="contenido__formulario" action="#" id="contacto">
                 <label for="nombre">Nombre:</label>
-                <input class="contenido__formulario__input" type="text" id="nombre" name="nombre" autocomplete="given-name" required><br><br>
+                <input class="contenido__formulario__input" type="text" id="nombre" name="nombre" autocomplete="given-name" required>
                 
                 <label for="apellido">Apellido:</label>
-                <input class="contenido__formulario__input" type="text" id="apellido" name="apellido" autocomplete="family-name" required><br><br>
+                <input class="contenido__formulario__input" type="text" id="apellido" name="apellido" autocomplete="family-name" required>
                 
                 <label for="email">Email:</label>
-                <input class="contenido__formulario__input" type="email" id="email" name="email" autocomplete="email" required><br><br>
+                <input class="contenido__formulario__input" type="email" id="email" name="email" autocomplete="email" required>
                 
                 <label for="telefono">Teléfono:</label>
-                <input class="contenido__formulario__input" type="number" id="telefono" name="telefono" autocomplete="tel" required><br><br>
+                <input class="contenido__formulario__input" type="number" id="telefono" name="telefono" autocomplete="tel" required>
                 
-                <button class="contenido__formulario__btn" type="submit">Enviar</button>
+                <button class="contenido__formulario__btn" type="submit">
+                    <i class="fas fa-paper-plane"></i> Enviar
+                </button>
+                
             </form>
       
         </main>
