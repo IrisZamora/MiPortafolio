@@ -7,7 +7,7 @@
 
 body{
     height: 100%;/*la altura de la pagina ocupa el 100% del navegador*/
-    background-color:#16b9da;
+    background-color:#000000;
     color: #FFFFFF;
     box-sizing: border-box; /* hace que los elementos hijos no sobresalgan del elemento padre*/
 }
