@@ -71,8 +71,8 @@ header{
 
 .contenido{
    
-    padding-top: 10%; /* Ajustar este valor según la altura del header */
-    padding-bottom: 10%; /* Ajustar este valor según la altura del footer */
+    padding-top: 10%; 
+    padding-bottom: 10%; 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -136,12 +136,12 @@ section div p strong{
     width:2rem;
     padding: 2%;
     opacity: 0.5;
+    transition: transform 0.3s ease;
 }
 
 .github:hover{
     opacity: 1;
-    border: 2px solid #FFFFFF;
-    width: 2.5rem;
+    transform: scale(1.30);
 
 }
 
